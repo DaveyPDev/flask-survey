@@ -20,7 +20,7 @@ def page_not_found(e):
 @app.route('/')
 def home_page():
     
-    return render_template('base.html', survey=survey)
+    return render_template('survey_start.html', survey=survey)
 
 
 @app.route('/begin', methods=["POST"])
